@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Project 103</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script = "https://youtu.be/RDWLIwZ3JdM"></script>
+    </head>
+    <body>
+        <center>
+            <div>
+                <br>
+                <h1>Family Member Recognition</h2>
+                <h3>List of faces that can be recognized:</h3>
+                <br>
+                <div id="list">
+                    <b>Yuvraj (someone)</b>
+                    <hr>
+                    <b>Mom</b>
+                    <hr>
+                    <b>Dad</b>
+                </div>
+                <br><br>
+                <h3>Current webcam view:</h3>
+                <div id="camera"></div>
+                <br><br>
+                <h3>Your picture:</h3>
+                <div id="result"></div>
+                <br><br>
+                <button id="pic" onclick="take_snapshot()">Take picture</button>
+                <button id="check" onclick="check()">Identify Face</button>
+                <br><br><br>
+                <span id="family">Family Member: <span id=""></span></span>
+                <br>
+                <span>Acurracy:<span id=""></span></span>
+                <br>
+            </div>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
